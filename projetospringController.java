@@ -16,14 +16,12 @@ public class projetospringController {
 		}
 		
 
-		@RequestMapping("/bsm")
-
-	public String bsm() {
+		@GetMapping("/bsm")
+			public String bsm() {
 			return ("Bsm's da Generation Brasil!");
 		}
 		
-		@RequestMapping("/bsm/obj")
-		
+		@GetMapping("/obj")
 			public String obj() {
 			return ("Objetivo de aprendizagem da semana...");
 		}
