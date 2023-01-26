@@ -11,6 +11,10 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @Entity
 @Table(name = "tb_postagens")
@@ -63,6 +67,6 @@ public class Postagem {
 		this.data = data;
 	}
 
-
-}
-
+	
+		
+	}
